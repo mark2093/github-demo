@@ -71,8 +71,19 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). <br>
 Run `ng test --code-coverage` to generate the a report containing the code coverage of the test cases. <br>
-To check code coverage report goto application root directory and open /coverage/index.html 
+To check code coverage report goto application root directory and open /coverage/index.html<br>
 
+### Run test for a single component.
+In `tsconfig.spec.json` add the Absolute path of the test file under ```__"**/*.d.ts"__  ``` <br>
+Example: 
+```json
+"src/app/pages/admin/admin-menu/admin-menu.component.spec.ts"
+```
+In `test.ts` comment out ```const context = require.context('./', true, /\.spec\.ts$/);``` and add the path to yout spec file <br>
+Example: 
+```javascript
+const context = require.context('app/pages/admin/admin-menu', true, /admin-menu.component\.spec\.ts$/);
+```
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
