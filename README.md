@@ -1,5 +1,4 @@
-# Name
-Fandango Web-360 Application
+# Fandango Web-360 Application
 
 # Description
 
