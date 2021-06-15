@@ -126,8 +126,11 @@ git push
 ```
 
 ## Links
+### Code MGO Repo
 - [Fandango Web360 Web App Repo](https://code.mgo.com/projects/ANALYTICS/repos/f360-web/browse "360 Web App")
+### Running environment
 - [Fandango Web360 Web DEV](http://fd-bi-f360-ui-dpe.s3-website-us-west-2.amazonaws.com/ "360 Web DEV")
 - [Fandango Web360 Web INT](https://int-360.fandango.com/ "360 Web INT")
 - [Fandango Web360 Web PROD](https://360.fandango.com/auth/login "360 Web PROD")
-- [Jenkins](http://10.13.33.48/ "Jinkins")
+### CI/CD
+- [Jenkins](http://10.13.33.48/ "Jenkins")
