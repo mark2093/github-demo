@@ -1,3 +1,6 @@
+# Name
+Fandango Web-360 Application
+
 # Description
 
 This project is for Fandango 360 Web application that is built using Angular 8 Framwork
