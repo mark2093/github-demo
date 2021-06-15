@@ -131,5 +131,3 @@ git push
 - [Fandango Web360 Web INT](https://int-360.fandango.com/ "360 Web INT")
 - [Fandango Web360 Web PROD](https://360.fandango.com/auth/login "360 Web PROD")
 - [Jenkins](http://10.13.33.48/ "Jinkins")
-
-
