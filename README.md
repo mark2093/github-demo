@@ -42,10 +42,10 @@ Database |Postgres
     This section contains the services resposible for the dependency injections required for the app to call the backed api and other required services.
 
 - **Shared :**
-    Components required commonly required throught the app are stored underthis section.
+    Components required commonly required throught the app are stored under this section.
 
 - **Store :**
-    The central store setup is kept under this section.
+    The central NgRx store setup is kept under this section.
 
 
 ## Running the Application Locally
@@ -107,6 +107,23 @@ const context = require.context('app/pages/admin/admin-menu', true, /admin-menu.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Git Commands
+
+After cloning the project create a new branch via JIRA and then fire the below commands:
+
+```shell
+git pull
+git checkout <your_new_branch_name>
+```
+After completing your changes fire the below:
+
+```shell
+git status
+git add -p # to add/reject changes press y : n
+git commit -m "F360A-<story_id> #comment web - <changes_done>"
+git push
+```
 
 ## Links
 - [Fandango Web360 Web App Repo](https://code.mgo.com/projects/ANALYTICS/repos/f360-web/browse "360 Web App")
