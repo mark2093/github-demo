@@ -2,20 +2,33 @@
 
 # Description
 
-This project is for Fandango 360 Web application that is built using Angular 8 Framwork
+With Fandango 360, users would be able to leverage Fandango’s 1st and 3rd party data streams, along with our refined scoring algorithm, to create optimized audience segments to push into today’s popular ad channels (available channels: Facebook, Google, Twitter, Snapchat).
+By providing comprehensive movie-goer data, users interested in creating marketing campaigns on upcoming or past movies, can be confident when creating segments with our standardized smart-score or through manual attribute building. Fandango 360 users will be excited to reach a more targeted audience, spending less and converting more on their ad campaigns. </br>
+### Product Vision
+With our MVP release, initially we would like to have movie studios onboarded and using the Fandango 360 as an integral part of their ad marketing campaigns targeting. They would be empowered to quickly create and manage their audiences.
+Ultimately, we would like any potential client, interested in creating a target audience for a movie, to be able to use Fandango 360 to not only create accurate segments but also use it as an insights tool to discover more about their audience’s behaviors.
+
+## Technologies
+
+Project | Language
+------------ | -------------
+Web | Angular 8
+Unit test |Karma & Jasmine 
+API | NodeJS
+Database |Postgres
 
 ## App Structure
 
-- **Auth**
+- **Auth :**
     This section contains all the Authenication components which includes login & password modifications and also the setup for NgRx store for auth
 
-- **Layout**
+- **Layout :**
     This section contains all the Layout components which includes Hearder, Footer & Navigation
 
-- **Model**
+- **Model :**
     This section contains all the Model classes used in the application.
 
-- **Pages**
+- **Pages :**
     This section contains the core part of the entire application which includes the following.
     - Account
     - Admin
@@ -25,17 +38,21 @@ This project is for Fandango 360 Web application that is built using Angular 8 F
     - Audience-Spotlight
     - Home
 
-- **Services**
+- **Services :**
     This section contains the services resposible for the dependency injections required for the app to call the backed api and other required services.
 
-- **Shared**
+- **Shared :**
     Components required commonly required throught the app are stored underthis section.
 
-- **Store**
-- The central store setup is kept under this section.
+- **Store :**
+    The central store setup is kept under this section.
 
 
-## Steps to Run the Application Locally
+## Running the Application Locally
+
+### Prerequisite for running the application
+ - Make sure node js is installed by running `node -v` in your bash terminal
+ - Fire this command to install angular CLI `npm install -g @angular/cli`
 
 ### Clone the repo
 
@@ -51,6 +68,7 @@ Install the `npm` packages described in the `package.json` and verify that it wo
 ```shell
 npm install
 npm start or ng serve
+ng serve --open  # to automatically open your default browser
 ```
 
 The `npm start` which in turn calls `ng serve` builds (compiles TypeScript and copies assets) the application into `dist/`, watches for changes to the source files, and deploys the application on port `4200`. 
@@ -67,13 +85,15 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+<b> Make sure to Run </b> `ng build --prod --aot` before pushing your changes.
+
+## Running unit tests for all components:
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). <br>
 Run `ng test --code-coverage` to generate the a report containing the code coverage of the test cases. <br>
 To check code coverage report goto application root directory and open /coverage/index.html<br>
 
-### Run test for a single component.
+## Run test for a single component:
 In `tsconfig.spec.json` add the Absolute path of the test file under ```__"**/*.d.ts"__  ``` <br>
 Example: 
 ```json
@@ -89,5 +109,10 @@ const context = require.context('app/pages/admin/admin-menu', true, /admin-menu.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Links
-- [Fandango Web360 Web App](https://code.mgo.com/projects/ANALYTICS/repos/f360-web/browse "360 Web App")
+- [Fandango Web360 Web App Repo](https://code.mgo.com/projects/ANALYTICS/repos/f360-web/browse "360 Web App")
+- [Fandango Web360 Web DEV](http://fd-bi-f360-ui-dpe.s3-website-us-west-2.amazonaws.com/ "360 Web DEV")
+- [Fandango Web360 Web INT](https://int-360.fandango.com/ "360 Web INT")
+- [Fandango Web360 Web PROD](https://360.fandango.com/auth/login "360 Web PROD")
+- [Jenkins](http://10.13.33.48/ "Jinkins")
+
 
