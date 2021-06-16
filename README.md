@@ -2,11 +2,7 @@
 
 # Description
 
-With Fandango 360, users would be able to leverage Fandango’s 1st and 3rd party data streams, along with our refined scoring algorithm, to create optimized audience segments to push into today’s popular ad channels (available channels: Facebook, Google, Twitter, Snapchat).
-By providing comprehensive movie-goer data, users interested in creating marketing campaigns on upcoming or past movies, can be confident when creating segments with our standardized smart-score or through manual attribute building. Fandango 360 users will be excited to reach a more targeted audience, spending less and converting more on their ad campaigns. </br>
-### Product Vision
-With our MVP release, initially we would like to have movie studios onboarded and using the Fandango 360 as an integral part of their ad marketing campaigns targeting. They would be empowered to quickly create and manage their audiences.
-Ultimately, we would like any potential client, interested in creating a target audience for a movie, to be able to use Fandango 360 to not only create accurate segments but also use it as an insights tool to discover more about their audience’s behaviors.
+With Fandango 360, users would be able to leverage Fandango’s 1st and 3rd party data streams, along with our refined scoring algorithm, to create optimized audience segments to push into today’s popular ad channels (available channels: Facebook, Google, LiveRamp, AdSmart, Apple News, Redshift, Twitter and Snapchat). By providing comprehensive movie-goer data, users interested in creating marketing campaigns on upcoming or past movies, can be confident when creating segments with our standardized smart-score or through manual attribute building. Fandango 360 users will be excited to reach a more targeted audience, spending less and converting more on their ad campaigns. </br>
 
 ## Technologies
 
@@ -15,7 +11,9 @@ Project | Language
 Web | Angular 8
 Unit test |Karma & Jasmine 
 API | NodeJS
-Database |Postgres
+Database |Postgres, Elasticsearch
+Authetication | Congnito
+Sequalize | ORM 
 
 ## App Structure
 
@@ -94,7 +92,7 @@ Run `ng test --code-coverage` to generate the a report containing the code cover
 To check code coverage report goto application root directory and open /coverage/index.html<br>
 
 ## Run test for a single component:
-In `tsconfig.spec.json` add the Absolute path of the test file under ```__"**/*.d.ts"__  ``` <br>
+In `tsconfig.spec.json` add the Absolute path of the test file under ```"**/*.d.ts"``` <br>
 Example: 
 ```json
 "src/app/pages/admin/admin-menu/admin-menu.component.spec.ts"
@@ -133,4 +131,5 @@ git push
 - [Fandango Web360 Web INT](https://int-360.fandango.com/ "360 Web INT")
 - [Fandango Web360 Web PROD](https://360.fandango.com/auth/login "360 Web PROD")
 ### CI/CD
-- [Jenkins](http://10.13.33.48/ "Jenkins")
+- [Jenkins Build Job](https://ci.mgo.com/view/F360/job/F360Web-Build-Master/ "Jenkins Build Job")
+- [Jenkins Deploy Job](https://ci.mgo.com/view/F360/job/F360Web-Deploy-Project/ "Jenkins Deploy Job")
