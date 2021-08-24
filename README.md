@@ -85,6 +85,28 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 <b> Make sure to Run </b> `ng build --prod --aot` before pushing your changes.
 
+## Prior to running unit tests:
+In the below file comment the following lines
+#### **`karma.conf.js`**
+
+```javascript 
+    browsers: ['ChromeHeadlessNoSandbox'],
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
+    singleRun: true
+```
+And uncomment out the following lines.
+
+```javascript 
+browsers: ['Chrome'],
+singleRun: false
+```
+<b> <i> <span style="color:red"> Make sure these changes are unstaged/reverted and not pushed into the repository.</span> </i></b>
+
 ## Running unit tests for all components:
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). <br>
