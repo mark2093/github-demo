@@ -105,7 +105,7 @@ And uncomment out the following lines.
 browsers: ['Chrome'],
 singleRun: false
 ```
-```html <b> <i> <span style="color:red"> Make sure these changes are unstaged/reverted and not pushed into the repository.</span> </i></b> ```
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15` Make sure these changes are unstaged/reverted and not pushed into the repository.
 
 ## Running unit tests for all components:
 
