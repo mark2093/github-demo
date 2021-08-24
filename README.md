@@ -105,7 +105,7 @@ And uncomment out the following lines.
 browsers: ['Chrome'],
 singleRun: false
 ```
-<b> <i> <span style="color:red"> Make sure these changes are unstaged/reverted and not pushed into the repository.</span> </i></b>
+```html <b> <i> <span style="color:red"> Make sure these changes are unstaged/reverted and not pushed into the repository.</span> </i></b> ```
 
 ## Running unit tests for all components:
 
